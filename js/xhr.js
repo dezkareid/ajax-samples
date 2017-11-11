@@ -1,8 +1,8 @@
 var xhr = new XMLHttpRequest();
-xhr.open("GET","https://pokeapi.co/api/v2/pokemon/1/");
+xhr.open("GET","http://localhost:3001/companies/1");
 xhr.onload = function () {
-	var pokemon = JSON.parse(this.responseText);
-	console.log(pokemon.name);
+	var company = JSON.parse(this.responseText);
+	console.log(company.name);
 };
 xhr.onerror = function () {
 	console.error("Ocurrio un error");

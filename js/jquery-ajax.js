@@ -4,10 +4,10 @@
 		console.log(xhrObject, statusError, error);
 	},
 	method : 'GET',
-	success : function (pokemon) {
-		console.log(pokemon.name);
+	success : function (company) {
+		console.log(company.name);
 	},
-	url : "https://pokeapi.co/api/v2/pokemon/1/",
+	url : "http://localhost:3001/companies/1",
 };
 window.addEventListener('load', function () {
 	//jQuery.ajax(config)
@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
 
 window.addEventListener('load', function () {
 	var config = {
-		url : "https://pokeapi.co/api/v2/pokemon/1/",
+		url : "http://localhost:3001/companies/1",
 	};
 	var always = function () {
 		console.log("Finished");	
@@ -29,8 +29,8 @@ window.addEventListener('load', function () {
 	var error = function () {
 		console.log("Hubo un error");
 	};
-	var success = function (pokemon) {
-		console.log(pokemon.name);
+	var success = function (company) {
+		console.log(company.name);
 	};
 	var deferred = jQuery.getJSON(config);
 	deferred.done(success);
