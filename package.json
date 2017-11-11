@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "faker": "./node_modules/json-server/bin/index.js --watch api.json --port 3001"
+    "faker": "node ./node_modules/json-server/bin/index.js --watch api.json --port 3001"
   },
   "author": "Joel Humberto Gómez Paredes <elmaildeldezkareid@gmail.com> (https://twitter.com/DezkaReid)",
   "license": "ISC",
